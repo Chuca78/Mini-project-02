@@ -9,60 +9,62 @@
 
 <body>
     <header>
-    <div class="header">
 
-        <h1 aria-label="Tim Fleck Portfolio"></h1>
-        <h1>Tim Fleck Portfolio</h1>
+    <h1 aria-label="Tim Fleck Portfolio"></h1>
+    <h1>Tim Fleck Portfolio</h1>
 
-        <div>
-            <ul>
-                <li>
-                    <a href="#Section-One">Section One</a>
-                </li>
-                <li>
-                    <a href="#Section-Two">Section Two</a>
-                </li>
-                <li>
-                    <a href="#Section-Three">Section Three</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#Section-One">Section One</a></li>
+            <li><a href="#Section-Two">Section Two</a></li>
+            <li><a href="#Section-Three">Section Three</a></li>
+        </ul>
+    </nav>
+    </header>
+
     <div class="cover-photo">
-
-
     </div>
-</header>
 
+    <main>
+        <aside>
+            <h3>This is a sidebar.</h3>
+            <div class="sample-img" >
+                <img class="img1" src="./images/scuba.jpg" alt="Scuba Diving"/>
+                <img class="img1" src="./images/climbing.jpg" alt="Rock Climbing"/>
+                <img class="img1" src="./images/surfing.jpg" alt="Surfing a Tube"/>
+            </div>
+        </aside>
 
-    <div class="content"></div>
-        <div id="Section-One" class="left-section">
-            <img src="./images/scuba.jpg" alt="Scuba Diving"/>
-            <h2>Section One</h2>
-            <p>
-                Lots of words, describing this section
-            </p>
+    <section>
+        <div id="Section-One" class="card">
+            <img class="img1" src="./images/scuba.jpg" alt="Scuba Diving"/>
+            <div class="card-body">
+                <h3 class="card-title">Section One</h3>
+                <p class="card-text">Lots of words, describing this section</p>
+            </div>
         </div>
-        <div id="Section-Two" class="left-section">
-            <img src="./images/climbing.jpg" alt="Rock Climbing"/>
-            <h2>Section Two</h2>
-            <p>
-                Lots of words, describing this section
-            </p>
+
+        <div id="Section-Two" class="card">
+            <div class="card-body">
+                <h3 class="card-title">Section Two</h3>
+                <p class="card-text">Lots of words, describing this section</p>
+            </div>
+            <img class="img2" src="./images/climbing.jpg" alt="Rock Climbing"/>
         </div>
-        <div id="Section-Three" class="left-section">
-            <img src="./images/surfing.jpg" alt="Surfing a Tube"/>
-            <h2>Section Three</h2>
-            <p>
-                Lots of words, describing this section
-            </p>
+
+        <div id="Section-Three" class="card"> 
+            <img class="img1" src="./images/surfing.jpg" alt="Surfing a Tube"/>
+            <div class="card-body">
+                <h3 class="card-title">Section Three</h3>
+                <p class="card-text">Lots of words, describing this section</p>
+            </div>
         </div>
-    </div>
+    </section>
     
-        
-    <div class="footer">
-        
-    </div>
-</body>
+    </main>
+<footer>
+    <p>Thanks for visiting my Portfolio page</p>
+</footer>
 
+</body>
 </html>
