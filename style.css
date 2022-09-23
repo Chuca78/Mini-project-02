@@ -1,4 +1,4 @@
-
+ /* TODO: Create CSS variables */
 
 
 
@@ -46,6 +46,8 @@ header {
     font-size: 16px;
 }
 
+
+/* TODO: fix size of hover box for all screen sizes */
 .navbar a:hover{
     background: darkgrey;
 }
@@ -64,15 +66,12 @@ p {
 }
 
 /* main content */
-
 h4{
     color: white;    
 }
 
 main {
-    /* Turns this element into a flexbox */
     display: flex;
-    /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
     margin-top: 2%;
   }
@@ -108,6 +107,7 @@ main {
     margin-left: 25px;
 }
 
+/* TODO: fix border to look more like the cards */
 aside {
     flex: 1;
     background-color: grey;
@@ -131,7 +131,7 @@ footer {
     text-align: center;
 }
 
-
+/* TODO: create multiple media queries */
 @media screen and (max-width: 760px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
     main,
@@ -151,3 +151,4 @@ footer {
         
     }
   }
+
