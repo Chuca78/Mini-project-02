@@ -19,8 +19,6 @@ header {
     color: black;
     display: inline-block;
     width: 100vw;
-    padding-top: 15px;
-    margin-right: 20px;
     font-size: 20px;
 }
 
@@ -39,15 +37,13 @@ header {
 .navbar a {
     color: black;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     text-transform: uppercase;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
-
-/* TODO: fix size of hover box for all screen sizes */
 .navbar a:hover{
     background: darkgrey;
 }
@@ -60,21 +56,21 @@ p {
     height: 400px;
     width: 100%;
     margin-bottom: 20px;
-    background-image: url("./images/vintage_harley.jpg");
+    background-image: url("./Images/vintage_harley.jpg");
     background-size: cover;
     background-position: center;
 }
 
 /* main content */
-h4{
-    color: white;    
+h3{
+    text-align: center;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2%;
-  }
+}
 
 .card {
     display:flex;
@@ -82,7 +78,7 @@ main {
     width: 90%;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: grey;
     color: black;
@@ -90,7 +86,7 @@ main {
 
 .img1{
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     max-width: 3000px;
     height: 15vw;
     object-fit: cover;
@@ -100,25 +96,38 @@ main {
 
 .img2{
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     max-width: 3000px;
+    object-fit: cover;
     height: 15vw;
     float: right;
     margin-left: 25px;
 }
 
-/* TODO: fix border to look more like the cards */
+.img3{
+    display: block;
+    margin: 20px auto;
+    max-width: 3000px;
+    object-fit: cover;
+    height: 15vw;
+    /* float: right; */
+    margin-left: 5px;
+}
+
 aside {
     flex: 1;
     background-color: grey;
     padding: 20px;
-  }
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
-  section {
+section {
     flex: 3;
     background-color: black;
     padding: 20px;
-  }
+}
 
 footer {
     background-color: grey;
@@ -131,24 +140,63 @@ footer {
     text-align: center;
 }
 
-/* TODO: create multiple media queries */
-@media screen and (max-width: 760px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
+/* TODO: perfect media queries */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: grey;
+        color: black;
+        display: inline-block;
+        width: 100vw;
+        font-size: 20px;
+        text-align: center;
+    }
+    
     main,
     .navbar ul {
       display: flex;
       flex-direction: column;
       text-align: center;
     }
-    /* Make the sidebar stack below the body */
+   
     aside {
-      order: 2;
+        order: 2;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
-    /* Change the navbar and footer background */
-    nav,
-    footer {
+
+    .img3{
+        display: block;
+        margin: 20px auto;
+        max-width: 3000px;
+        object-fit: cover;
+        height: 25vw;
+        width: 50vw;
+    }
+   
+    footer, aside {
         background-color: rgb(88, 80, 80);
         
     }
   }
 
+@media screen and (max-width: 992px) {
+    header {
+        padding: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: grey;
+        color: black;
+        display: inline-block;
+        width: 100vw;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
