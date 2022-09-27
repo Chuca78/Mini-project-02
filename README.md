@@ -12,9 +12,8 @@ N/A
 ## Usage
 
 This website is designed to show my proficiency in building code from scratch to satisfy the user story and acceptance criteria. The portfolio showcased in this website will eventually link all of my collaborative and individual work as a programmer to perspective employers. The external URL for this study guide is: https://chuca78.github.io/Mini-project-02/
-```md
-    ![portfolio_page](chuca78.github.io_Mini-project-02_.png)
-    ```
+![chuca78 github io_Mini-project-02_](https://user-images.githubusercontent.com/97859682/192421874-9e09456f-5a24-4b91-b1bd-1fb052617489.png)
+    
 ## Credits
 
 The following websites were linked to my portfolio page to demonstrate my ability to link my future projects. They are not my work, but are representative of the notional apps that I would have created.
