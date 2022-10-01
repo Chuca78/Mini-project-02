@@ -1,4 +1,4 @@
- /* TODO: Create CSS variables */
+
 :root {
     --dark: black;
     --light: grey;
@@ -52,10 +52,6 @@ header {
     background: var(--hover);
 }
 
-p {
-    font-size: 16px;
-}
-
 .cover-photo {
     height: 400px;
     width: 100%;
@@ -74,6 +70,19 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2%;
+}
+
+aside {
+    flex: 1;
+    background-color: var(--light);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
 }
 
 .card {
@@ -117,15 +126,6 @@ main {
     margin-left: 5px;
 }
 
-aside {
-    flex: 1;
-    background-color: var(--light);
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 section {
     flex: 3;
     background-color: var(--dark);
@@ -143,7 +143,6 @@ footer {
     text-align: center;
 }
 
-/* TODO: perfect media queries */
 @media screen and (max-width: 768px) {
     header {
         padding: 20px;
