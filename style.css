@@ -38,6 +38,7 @@ header {
     display: inline-block;
 }
 
+/* formatting for navbar links */
 .navbar a {
     color: var(--dark);
     text-decoration: none;
@@ -48,15 +49,17 @@ header {
     font-size: 16px;
 }
 
+/* changes behavior of navbar links when pointer hovers over them */
 .navbar a:hover{
     background: var(--hover);
 }
 
+/* avatar image */
 .cover-photo {
     height: 400px;
     width: 100%;
     margin-bottom: 20px;
-    background-image: url("./Images/vintage_harley.jpg");
+    background-image: url("./Images/profile.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -72,6 +75,7 @@ main {
     margin-top: 2%;
 }
 
+/* formats smaller sidebar for collaboration projects */
 aside {
     flex: 1;
     background-color: var(--light);
@@ -85,6 +89,7 @@ p {
     font-size: 16px;
 }
 
+/* formats each card object */
 .card {
     display:flex;
     margin-left: 20px;
@@ -97,16 +102,18 @@ p {
     color: var(--dark);
 }
 
+/* formats first app image to be larger than the others */
 .img1{
     display: block;
     margin: 20px auto;
     max-width: 3000px;
-    height: 15vw;
+    height: 20vw;
     object-fit: cover;
     float: left;
     margin-right: 25px;
 }
 
+/* formats second app to be right justified */
 .img2{
     display: block;
     margin: 20px auto;
@@ -117,6 +124,7 @@ p {
     margin-left: 25px;
 }
 
+/* formats aside images */
 .img3{
     display: block;
     margin: 20px auto;
@@ -126,12 +134,24 @@ p {
     margin-left: 5px;
 }
 
+/* formats the third app image to left justify */
+.img4{
+    display: block;
+    margin: 20px auto;
+    max-width: 3000px;
+    height: 15vw;
+    object-fit: cover;
+    float: left;
+    margin-right: 25px;
+}
+
 section {
     flex: 3;
     background-color: var(--dark);
     padding: 20px;
 }
 
+/* formats contact info section, in the footer */
 footer {
     background-color: var(--light);
     color: var(--dark);
@@ -143,6 +163,7 @@ footer {
     text-align: center;
 }
 
+/* uses media query to stack aside when using smaller devices or windows  */
 @media screen and (max-width: 768px) {
     header {
         padding: 20px;
@@ -184,6 +205,7 @@ footer {
     }
   }
 
+  /* uses media query to stack navbar before it flexes */
 @media screen and (max-width: 992px) {
     header {
         padding: 20px;
