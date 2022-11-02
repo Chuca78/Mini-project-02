@@ -129,7 +129,7 @@ p {
 .img3{
     display: block;
     margin: 20px auto;
-    max-width: 500px;
+    max-width: 800px;
     object-fit: cover;
     height: 15vw;
     margin-left: 5px;
